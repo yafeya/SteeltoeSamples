@@ -1,6 +1,6 @@
 ---
 applications:
-- name: foo
+- name: yafeya-foo
   buildpacks:
    - dotnet_core_buildpack
   env:

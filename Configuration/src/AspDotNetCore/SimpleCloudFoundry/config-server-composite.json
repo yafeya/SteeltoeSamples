@@ -2,7 +2,7 @@
   "composite": [
     {
       "git": {
-        "uri": "https://github.com/spring-cloud-samples/config-repo"
+        "uri": "https://github.com/yafeya/config-repo"
       }
     },
     {
