@@ -1,0 +1,11 @@
+﻿---
+applications:
+- name: fortuneService
+  buildpacks:
+   - hwc_buildpack
+  memory: 512M
+  stack: windows2016
+  health-check-type: http
+  health-check-http-endpoint: /api/Fortunes/health
+  services:
+   - myDiscoveryService

@@ -1,0 +1,9 @@
+﻿---
+applications:
+- name: keystore
+  memory: 256M
+  command: cd ${HOME} && ./RedisDataProtectionKeyStore --server.urls http://0.0.0.0:${PORT}
+  env:
+    ASPNETCORE_ENVIRONMENT: Production
+  services:
+   - myRedisService

@@ -1,0 +1,12 @@
+---
+applications:
+- name: musicstore
+  memory: 256M
+  stack: windows2016
+  command: .\MusicStoreService
+  env:
+    ASPNETCORE_ENVIRONMENT: Production
+  services:
+   - mStoreRegistry
+   - mStoreConfig
+   - mStoreStoreDB

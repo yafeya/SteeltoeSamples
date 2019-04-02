@@ -1,0 +1,12 @@
+---
+applications:
+- name: admin-portal
+  memory: 256M
+  stack: windows2016
+  command: .\AdminPortal
+  env:
+    ASPNETCORE_ENVIRONMENT: Development
+  services:
+   - service-registry
+   - config-server
+   - sso

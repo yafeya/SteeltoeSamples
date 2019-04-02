@@ -1,0 +1,12 @@
+﻿---
+applications:
+- name: single-signon
+  buildpacks:
+   - hwc_buildpack
+  memory: 256M
+  stack: windows2016
+  command: .\CloudFoundrySingleSignon
+  env:
+     ASPNETCORE_ENVIRONMENT: Development
+  services:
+   - mySSOService

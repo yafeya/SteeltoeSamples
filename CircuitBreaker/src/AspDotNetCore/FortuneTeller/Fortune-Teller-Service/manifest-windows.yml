@@ -1,0 +1,11 @@
+---
+applications:
+- name: fortuneService
+  buildpacks:
+   - hwc_buildpack
+  stack: windows2016
+  command: .\Fortune-Teller-Service
+  env:
+    ASPNETCORE_ENVIRONMENT: Production
+  services:
+   - myDiscoveryService

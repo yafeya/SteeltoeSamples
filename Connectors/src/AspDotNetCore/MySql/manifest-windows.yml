@@ -1,0 +1,13 @@
+﻿---
+applications:
+- name: mysql-connector
+  memory: 256M
+  disk_quota: 200M
+  stack: windows2016
+  buildpacks:
+   - hwc_buildpack
+  command: .\MySql
+  env:
+    ASPNETCORE_ENVIRONMENT: Development
+  services:
+   - myMySqlService

@@ -1,0 +1,14 @@
+---
+applications:
+- name: order-service
+  memory: 256M
+  stack: windows2016
+  command: .\OrderService
+  env:
+    ASPNETCORE_ENVIRONMENT: Development
+    GRANT_TYPE: client_credentials
+  services:
+   - service-registry
+   - config-server
+   - mysql-orders
+   - sso

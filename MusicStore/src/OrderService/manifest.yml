@@ -1,0 +1,12 @@
+---
+applications:
+- name: orderprocessing
+  buildpacks:
+   - dotnet_core_buildpack
+  memory: 256M
+  env:
+    ASPNETCORE_ENVIRONMENT: Production
+  services:
+   - mStoreRegistry
+   - mStoreConfig
+   - mStoreOrdersDB

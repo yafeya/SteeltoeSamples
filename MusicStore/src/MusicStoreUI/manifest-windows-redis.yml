@@ -1,0 +1,14 @@
+---
+applications:
+- name: musicui
+  memory: 512M
+  stack: windows2016
+  command: .\MusicStoreUI
+  env:
+    ASPNETCORE_ENVIRONMENT: Production
+  services:
+   - mStoreRegistry
+   - mStoreConfig
+   - mStoreAccountsDB
+   - mStoreRedis
+   - mStoreHystrix

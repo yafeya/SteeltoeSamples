@@ -1,0 +1,13 @@
+---
+applications:
+- name: oauth-connector
+  memory: 256M
+  disk_quota: 200M
+  stack: windows2016
+  buildpacks:
+   - hwc_buildpack
+  command: .\OAuth
+  env:
+     ASPNETCORE_ENVIRONMENT: Development
+  services:
+   - myOAuthService
